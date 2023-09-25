@@ -7,7 +7,7 @@
  *
  * Return: The maximum integer in the array.
  */
-yyint get_max(int *array, int size)
+int get_max(int *array, int size)
 {
 	int max, i;
 
