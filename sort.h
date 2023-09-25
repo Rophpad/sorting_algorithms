@@ -33,6 +33,7 @@ void swap(int *x, int *y);
 void q_sort_recursive(int *array, size_t start, size_t end, size_t size);
 size_t lomutoPartition(int *array, size_t start, size_t end, size_t size);
 int _swap_nodes(listint_t **list, listint_t *node1, listint_t *node2);
+int get_max(int *array, int size);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
@@ -40,5 +41,5 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
-
+void counting_sort(int *array, size_t size);
 #endif
