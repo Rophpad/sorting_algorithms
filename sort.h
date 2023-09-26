@@ -35,6 +35,8 @@ void q_sort_recursive(int *array, size_t start, size_t end, size_t size);
 size_t lomutoPartition(int *array, size_t start, size_t end, size_t size);
 int _swap_nodes(listint_t **list, listint_t *node1, listint_t *node2);
 int get_max(int *array, int size);
+void merge(int *array, int *temp, int left, int mid, int right);
+void merge_sort_recursive(int *array, int *temp, int left, int right);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
@@ -43,4 +45,6 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+
 #endif
