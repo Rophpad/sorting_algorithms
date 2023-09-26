@@ -3,11 +3,13 @@
 
 /* -------- C libraries -------- */
 
-/*#include <stddef.h>*/
-/*#include <stdio.h>*/
-/*#include <stdlib.h>*/
+#include <stddef.h>
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+
+#define UP 0
+#define DOWN 1
 
 /* -------- Data structures ------- */
 
@@ -43,6 +45,11 @@ void heap_sort(int *array, size_t size);
 int get_max(int *array, int size);
 void radix_counting_sort(int *array, size_t size, int sig, int *buff);
 void radix_sort(int *array, size_t size);
+void swap_ints(int *a, int *b);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_sort(int *array, size_t size);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
@@ -54,5 +61,6 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
 
 #endif
